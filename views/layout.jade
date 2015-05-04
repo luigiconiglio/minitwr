@@ -13,14 +13,19 @@ html
 		include header
 		
 		div.container
-			div.row
-				div.col-md-3
+			.row
+				.col-md-3
 					block left
-				div.col-md-6.middle
+
+				.col-md-6.middle
 					block middle
-				div.col-md-3
+
+				.col-md-3
 					block right
+
 					
 		include footer
-	script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
-	script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js')
+
+		//Because who cache goes faster
+		script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
+		script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js')

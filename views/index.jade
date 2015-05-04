@@ -1,5 +1,25 @@
 extends layout
 
+block left
+	//Empty
+
 block middle
-		h1.text-center Program Name
-		p Hello World
+	h1.text-center Minitwr
+	p. 
+		Write your text inside here
+	form.form-horizontal(action='/', method='POST')
+		.form-group
+			textarea.form-control
+		.form-group.text-center
+			button.btn.btn-default(type='submit', content='Sends') Submit
+	div
+		table.table
+			tr
+				th.col-md-8 Message
+				th.col-md-2 Date
+				th.col-md-2 Nick
+			
+
+
+block right
+	//Empty

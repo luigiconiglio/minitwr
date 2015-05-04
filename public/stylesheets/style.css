@@ -7,10 +7,9 @@ a {
   color: #00B7FF;
 }
 
-middle {
-    padding: 40px 15px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+.centered
+{
+  margin-left: auto;
+  margin-right: auto;		
 }
 	
