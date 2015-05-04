@@ -1,0 +1,26 @@
+doctype html
+html
+	head
+		block head
+			block title
+				title Program Name
+			block meta
+				meta(name='description', content='school proget')
+				meta(name='keywords', content='minitwr')
+			link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css', rel='stylesheet')
+			link(href='/stylesheets/style.css', rel='stylesheet')
+	body
+		include header
+		
+		div.container
+			div.row
+				div.col-md-3
+					block left
+				div.col-md-6.middle
+					block middle
+				div.col-md-3
+					block right
+					
+		include footer
+	script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
+	script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js')
