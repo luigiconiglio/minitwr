@@ -5,15 +5,18 @@ block left
 
 block middle
 	h1.text-center(id = 'title') #{title}
-	p. 
-		Hey there, leave a message !
-	form.form-horizontal(action='/', method='POST')
-		.form-group
-			input.form-control(type='text', name='nick', placeholder='Nick')
-		.form-group
-			textarea.form-control(type='text', name='message', placeholder='Message')
-		.form-group.text-center
-			button.btn.btn-default(type='submit') Submit
+	div(id='form')
+		p. 
+			Who made this website doesn't really know very much about security and he made a big
+			mistake leaving in this page one of the most commons security holes. Try to find it and use it
+			to change the title of the page from "MiniTWR" to "Hacked", a little "prize" is waiting for you. 
+		form.form-horizontal(action='/', method='POST')
+			.form-group
+				input.form-control(type='text', name='nick', placeholder='Nick')
+			.form-group
+				textarea.form-control(type='text', name='message', placeholder='Message')
+			.form-group.text-center
+				button.btn.btn-default(type='submit') Submit
 	div
 		table.table
 			tr
