@@ -3,7 +3,7 @@ html
 	head
 		block head
 			block title
-				title Program Name
+				title #{title}
 			block meta
 				meta(name='description', content='school proget')
 				meta(name='keywords', content='minitwr')
@@ -26,6 +26,6 @@ html
 					
 		include footer
 
-		//Because who cache goes faster
+		//CDM because who cache goes faster
 		script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
 		script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js')

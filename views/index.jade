@@ -4,14 +4,14 @@ block left
 	//Empty
 
 block middle
-	h1.text-center #{title}
+	h1.text-center(id = 'title') #{title}
 	p. 
-		Write your text inside here
+		Hey there, leave a message !
 	form.form-horizontal(action='/', method='POST')
 		.form-group
-			input.form-control(type='text', name='nick')
+			input.form-control(type='text', name='nick', placeholder='Nick')
 		.form-group
-			textarea.form-control(type='text', name='message')
+			textarea.form-control(type='text', name='message', placeholder='Message')
 		.form-group.text-center
 			button.btn.btn-default(type='submit') Submit
 	div
@@ -27,7 +27,8 @@ block middle
 					td #{tweets[index].When}
 					td #{tweets[index].Nick}
 			
-
+	if hacked
+		script(src='/javascripts/xss.js')
 
 
 block right
