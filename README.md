@@ -7,7 +7,7 @@ who stores the tweets in a simple JSON database.
 
 ### The hack game
 
-The website has a security hole,  try to find it! *(Or if you are really lazy look the file* [Read solution](public/tweets/lazy_me.txt)*)*
+The website has a security hole,  try to find it! *(Or if you are really lazy have look to* [this](public/tweets/lazy_me.txt)* file)*
 
 .
 
@@ -15,10 +15,8 @@ The website has a security hole,  try to find it! *(Or if you are really lazy lo
 
 .
 
-.
+Wanna an hint, try to post ```<script>Hacked;</script>``` as message, what happen?
 
-Wanna an hint, try to post *<script>Hacked;</script>* as message, what happen?
-
-Still nothing? Have a look: [Absolute README link](http://en.wikipedia.org/wiki/Cross-site_scripting)
+Still nothing? Have a look here: [Wiki Cross-site scripting](http://en.wikipedia.org/wiki/Cross-site_scripting)
 
 
