@@ -4,21 +4,30 @@ block left
 	//Empty
 
 block middle
-	h1.text-center Minitwr
+	h1.text-center #{title}
 	p. 
 		Write your text inside here
 	form.form-horizontal(action='/', method='POST')
 		.form-group
-			textarea.form-control
+			input.form-control(type='text', name='nick')
+		.form-group
+			textarea.form-control(type='text', name='message')
 		.form-group.text-center
-			button.btn.btn-default(type='submit', content='Sends') Submit
+			button.btn.btn-default(type='submit') Submit
 	div
 		table.table
 			tr
 				th.col-md-8 Message
-				th.col-md-2 Date
+				th.col-md-2 When
 				th.col-md-2 Nick
+			- var index = tweets.length
+			while (index--)
+				tr
+					td !{tweets[index].Message}
+					td #{tweets[index].When}
+					td #{tweets[index].Nick}
 			
+
 
 
 block right
