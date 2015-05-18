@@ -14,16 +14,17 @@ You can find all the dependencies and their versions inside [package.json](packa
 
 I wanted to make the website a bit more "stimulating" and that's why MiniTWR host a very basical (embarassing) security hole. MiniTWR encourages you to exploit it by offering a little "prize" (just a canvas animation, don't expect big things!). 
 
-- ** Goal :** Change the title on the front page from "MiniTWR" to "Hacked"
-- ** How? :** If you have no idea about how check out what is [Cross-site scripting], if you still have no idea about how to make it work try to post this message 
-```javascript
-<script>alert('Hacked');</script>```
+__Goal__ : Change the title on the front page from "MiniTWR" to "Hacked"
+
+
+__How?__ : If you have no idea about how check out what is [Cross-site scripting], if you still have no idea about how to make it work try to post this message :
+`<script>alert('Hacked');</script>`
+
+
 what happens? 
 
-##### Solution
+#### Solution
 A possible solution to the challenge can be found [here](public/tweets/lazy_me.txt)
-
-
 
 
 
